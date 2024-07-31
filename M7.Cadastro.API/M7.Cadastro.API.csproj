@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\M7.Cadastro.Application\M7.Cadastro.Application.csproj" />
+    <ProjectReference Include="..\M7.Cadastro.Domain\M7.Cadastro.Domain.csproj" />
+    <ProjectReference Include="..\M7.Cadastro.Repository\M7.Cadastro.Repository.csproj" />
   </ItemGroup>
 
 </Project>

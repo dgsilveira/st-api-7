@@ -1,6 +1,14 @@
+using M7.Cadastro.Application.Application;
+using M7.Cadastro.Domain.Interfaces;
+using M7.Cadastro.Repository.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddSingleton<IPessoaApplication, PessoaApplication>();
+
+builder.Services.AddSingleton<IPessoaRepository, PessoaRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
